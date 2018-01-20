@@ -6,7 +6,7 @@ $my_dir = dirname ( __FILE__ );
 ?>
 <html>
 <head>
-<title>URLMS</title>
+<title>Parking Finder Bahaye</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
 	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -29,13 +29,21 @@ $my_dir = dirname ( __FILE__ );
 	<!--  Nav Bar -->
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="../index.php"> <img
-			src="insertLogoHere.jpg" width="40" height="40"
+			src="logo.jpg" width="40" height="40"
 			class="d-inline-block align-top" alt=""> Hackatown 2018 - Pablo
 		</a>
 	</nav>
 	<br>
 	<br>
 	<br>
+	
+	<div class="contrainer" style="height: 50px;">
+	
+	<a class="btn btn-danger btn-lg" href="pablo.html"
+								role="button">Go to Map</a>
+	
+	</div>
+	
 	<!-- Bootstrap Container -->
 	<div class="container" style="height: 600px;">
   		<?php	//Load a URLMS from persistence

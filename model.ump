@@ -1,0 +1,9 @@
+class MapItem {
+  double longitude;
+  double latitude;
+  descriptionRPA;
+  codeRPA;
+  statusREP;
+  type;
+  arrondissement;
+}

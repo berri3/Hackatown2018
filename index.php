@@ -37,12 +37,23 @@ $my_dir = dirname ( __FILE__ );
 	<br>
 	<br>
 	
-	<div class="contrainer" style="height: 50px;">
+	<div class="contrainer" style="height: 200px;width: 400;">
 	
-	<a class="btn btn-danger btn-lg" href="pablo.html"
-								role="button">Go to Map</a>
+	<a class="btn btn-danger btn-lg" href="pablo.php" role="button">Go to Map</a>
+	
+	<form action="pablo.php" method="get">
+	<input type="hidden" name="action" value="10/10" />
+	<label for="address">Address</label> 
+	<input type="text" class="form-control" name="address" 
+	id="address" placeholder="Enter address here" /> 
+	<small id="nameHelp" class="form-text text-muted">
+	Enter the address of your destination.
+	</small>
+	<br> <input type="submit" class="btn btn-danger" value="Submit Pablo!" /> <br>
+	</form>
 	
 	</div>
+	
 	
 	<!-- Bootstrap Container -->
 	<div class="container" style="height: 600px;">

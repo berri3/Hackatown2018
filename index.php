@@ -1,6 +1,7 @@
 <?php
 $my_dir = dirname ( __FILE__ );
-//require_once $my_dir . '/persistence/persistence.php';
+require_once $my_dir . '/CsvParser.php';
+require_once $my_dir . '/MapItem.php';
 
 //session_start ();
 ?>
@@ -34,6 +35,16 @@ $my_dir = dirname ( __FILE__ );
 		</a>
 	</nav>
 	<br>
+	<br>
+	<br>
+	<div  class="contrainer" >
+	<?php 
+	$csv = "OpenData/pabloData.csv";
+	
+	$csvReader = new CsvParser();
+	print_r($csvReader->parseFileToMapItem($csv));
+	?>
+	</div>
 	<br>
 	<br>
 	

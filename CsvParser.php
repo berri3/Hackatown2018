@@ -36,9 +36,12 @@ class CsvParser
     function parseFileToMapItem($fileName){
     	$array = array();
     	if (($file = fopen($fileName, "r")) != FALSE){
+    		fgetcsv($file, 0, ",");
+    		
 	    	while(($data = fgetcsv($file, 0, ",")) != FALSE){ //data is indexed array containing fields read
-	                array_push($array, $data); //pushes it as if array is a stack tho
+	                
 	                $item = new MapItem($data[0], $data[1], $data[5], $data[6], $data[12], $data[18], $data[19]);
+	                array_push($array, $item); //pushes it as if array is a stack tho
 	            }
     	}
     	return $array;

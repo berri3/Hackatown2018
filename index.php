@@ -42,7 +42,7 @@ require_once $my_dir . '/MapItem.php';
 	$csv = "OpenData/pabloData.csv";
 	
 	$csvReader = new CsvParser();
-	print_r($csvReader->parseFileToMapItem($csv));
+	//print_r($csvReader->parseFileToMapItem($csv));
 	?>
 	</div>
 	<br>
